@@ -1,9 +1,47 @@
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
+import React,{useState} from 'react'
+
+const ColorPicker = () => {
+
+const [color,setColor] = useState("#ffffff")
+const HandleColorChange = (event)=>{
+    setColor(event.target.value)
+}
+  return (
+    <div className="color-picker-container">
+
+      <h1>Color Picker</h1>
+      <div className="color-display" style={{backgroundColor: color}}>
+        <p>Selected Color: {color}</p>
+      </div>
+      <label>Select a Color</label>
+      <input type="color" value={color} onChange={HandleColorChange} />
+
+    </div>
+  )
+}
+
+export default ColorPicker
 
 
-body{
+
+
+// const App = () => {
+
+  
+//   return (
+//    <>
+   
+//    <ColorPicker />
+   
+//    </>
+//   )
+// }
+
+// export default App
+
+
+
+/* body{
     font-family: Arial, sans-serif;
 }
 
@@ -49,4 +87,4 @@ height: 50px;
 padding: 5px;
 border-radius:15px ;
 border: 3px solid hsl(0,0%,80%);
-} 
+} */
