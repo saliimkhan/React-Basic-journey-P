@@ -8,6 +8,7 @@ import counter from './Bro_Code/React-Hooks/counter'
   // import ProfilePicture from './Bro_Code/clickEvents/profilePicture.jsx'
   // import MyComponent from './Bro_Code/React-Hooks/1myComponent.jsx'
   // import MyComponent2 from './Bro_Code/React-Hooks/2myComponent.jsx'
+  // import MyComponent3 from './Bro_Code/React-Hooks/3myComponent.jsx'
 // import Counter from './Bro_Code/React-Hooks/counter.jsx'
 //  import OnChange from './Bro_Code/React-Hooks/onChange.jsx'
 // import ColorPicker from './Bro_Code/React-Hooks/ColorPicker.jsx'
@@ -18,7 +19,7 @@ const App = () => {
   return (
    <>
    
-  
+  <MyComponent3 />
    
    </>
   )
