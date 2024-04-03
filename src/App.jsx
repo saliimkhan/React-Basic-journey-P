@@ -13,6 +13,8 @@ import React from 'react'
 //  import OnChange from './Bro_Code/React-Hooks/onChange.jsx'
 // import ColorPicker from './Bro_Code/React-Hooks/ColorPicker.jsx'
 // import TodoList from './Bro_Code/Projects/todoList.jsx'
+// import UseEffect from './Bro_Code/useEffect/use_Effect.jsx'
+import UseEffect1 from './Bro_Code/useEffect/use_Effect1.jsx'
 
 const App = () => {
 
@@ -20,7 +22,7 @@ const App = () => {
   return (
    <>
    
-  {/* <TodoList /> */}
+  <UseEffect1 />
    
    </>
   )
