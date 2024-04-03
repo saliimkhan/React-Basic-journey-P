@@ -12,7 +12,7 @@ import React from 'react'
 // import Counter from './Bro_Code/React-Hooks/counter.jsx'
 //  import OnChange from './Bro_Code/React-Hooks/onChange.jsx'
 // import ColorPicker from './Bro_Code/React-Hooks/ColorPicker.jsx'
-import TodoList from './Bro_Code/Projects/todoList.jsx'
+// import TodoList from './Bro_Code/Projects/todoList.jsx'
 
 const App = () => {
 
@@ -20,7 +20,7 @@ const App = () => {
   return (
    <>
    
-  <TodoList />
+  {/* <TodoList /> */}
    
    </>
   )

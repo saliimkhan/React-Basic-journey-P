@@ -1,12 +1,11 @@
 import React,{useState} from 'react'
-import { M } from 'vite/dist/node/types.d-aGj9QkWt';
 
 const todoList = () => {
 
-   const[tasks,setTasks] = useState(["Eats BreakFast","Take a Shower","Take a Chill Pill"])
-   const[newTasks,setNewtasks] = useState("");
+  const[tasks,setTasks] = useState(["Eats BreakFast","Take a Shower","Take a Chill Pill"])
+  const[newTasks,setNewtasks] = useState("");
 
-   function HandleInputChange (event){
+  function HandleInputChange (event){
     setNewtasks(event.target.value)
    }
 
@@ -16,32 +15,36 @@ const todoList = () => {
     setNewtasks("")
    }
 
+   
+   
    function deleteTask (index){
-  //  const deleteTask = tasks.filter((_,i) => i !== index);
-  //  setTasks(deleteTask)
-  //  }
+     const deleteTask = tasks.filter((_,i) => i !== index);
+     setTasks(deleteTask)
+     }
+  
+     function moveTaskUp (index){
+   
+      if(index > 0){
+        const moveTask = [...tasks];
+        [moveTask[index],moveTask[index-1]] = [moveTask[index-1],moveTask[index]];
+        setTasks(moveTask);
+      }
+  
+     }
+  
+     function moveTaskDown (index){
+  
+      if(index < tasks.length -1){
+        const downTask = [...tasks];
+        [downTask[index],downTask[index+1]] = [downTask[index+1],downTask[index]];
+        setTasks(downTask);
+      }
+  
+     }
 
-   function moveTaskUp (index){
- 
-    // if(index > 0){
-    //   const moveTask = [...tasks];
-    //   [moveTask[index],moveTask[index-1]] = [moveTask[index-1],moveTask[index]];
-    //   setTasks(moveTask);
-    // }
-
-   }
-
-   function moveTaskDown (index){
-
-    // if(index < tasks.length -1){
-    //   const downTask = [...tasks];
-    //   [downTask[index],downTask[index+1]] = [downTask[index+1],downTask[index]];
-    //   setTasks(downTask);
-    // }
-
-   }
 
   return (
+    
     <div className='to-do-list'>
         <h1 >To-Do-List</h1>
 
@@ -54,7 +57,7 @@ const todoList = () => {
         {tasks.map((task,index)=>
         <li key={index}>
             <span className='text'>{task}</span>
-            <button className='delete-button' onClick={() => deleteTask(index)}>❌</button>
+            <button className='delete-button' onClick={() =>deleteTask(index)}>❌</button>
             <button className='move-button' onClick={() => moveTaskUp(index)}>👆</button>
             <button className='move-button' onClick={() => moveTaskDown(index)}>👇</button>
         </li>
@@ -64,6 +67,22 @@ const todoList = () => {
     </div>
   )
 }
-}
 
-export default todoList;
+export default todoList
+
+// import TodoList from './Bro_Code/Projects/todoList.jsx'
+
+// const App = () => {
+
+  
+//   return (
+//    <>
+   
+//   <TodoList />
+   
+//    </>
+//   )
+// }
+
+// export default App
+
