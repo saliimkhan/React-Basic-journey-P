@@ -132,3 +132,55 @@ li{
     font-size: 1.4rem;
     margin-left: 10px;
 } */
+
+
+
+
+
+
+
+
+
+/*DigitalClock CSS */
+/* 
+body{
+   background-image: url(assets/photo-1710415273471-24431054c4da.avif); 
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   margin: 0%; */
+   /* OPTIONAL */
+   /* display: flex;
+   justify-content: center;
+   min-height: 100vh;
+   align-items: center;
+}
+
+.clock-container{
+backdrop-filter: blur(5px);
+min-width: 100vw;
+padding: 10px 0;
+}
+
+.clock{
+color: rgb(183, 12, 12);
+font-size: 6rem;
+font-weight: bold;
+font-family: "Gilroy";
+text-align: center;
+text-shadow:3px 3px 5px hsla(0,0%,0%,0.75);
+} */
+
+
+
+
+
+
+
+/* useContext Component CSS */
+.box{
+    border: 3px solid;
+    padding: 25px ;
+    margin: 25px;
+}
