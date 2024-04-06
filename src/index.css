@@ -3,10 +3,10 @@
 @tailwind utilities; */
 
 
-body{
-    font-family: Arial, sans-serif;
+/* body{
+    font-family: Arial, sans-serif; */
     /* background-color: hsl(0,0%,10%); */
-}
+/* } */
 /* 
 .color-picker-container{
 display: flex;
@@ -179,8 +179,72 @@ text-shadow:3px 3px 5px hsla(0,0%,0%,0.75);
 
 
 /* useContext Component CSS */
-.box{
+/* .box{
     border: 3px solid;
     padding: 25px ;
     margin: 25px;
+} */
+
+/* StopWatch Css */
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+}
+
+.stopwatch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.display{
+    font-size: 5rem;
+    font-weight: bold;
+    font-family: "Gilroy";
+    margin-bottom: 25px;
+    color: hsla(0,0%,30%);
+    text-shadow: 2px 2px 2px hsla(0,0%,0%, 0.75 );
+}
+
+.controls button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px ;
+    margin: 5px;
+    min-width: 125px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+.start-button{
+    background-color: hsl(115,100%,40%);
+}
+
+.start-button:hover{
+    background-color: hsl(115,100%,35%);
+}
+
+.stop-button{
+    background-color: hsl(10,90%,50%);
+}
+
+.stop-button:hover{
+    background-color: hsl(10,90%,45%);
+}
+
+.reset-button{
+    background-color: hsl(205,90%,60%);
+}
+
+.reset-button:hover{
+    background-color: hsl(205,90%,55%);
 }
